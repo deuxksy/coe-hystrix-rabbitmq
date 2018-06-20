@@ -422,3 +422,15 @@ public class EurekaServerApplication {
 	}
 }
 ~~~
+
+## 7. 실행
+
+위에서 작성한 어플리케이션을 실행 한 이후 http://localhost:9999/hystrix 로 접속한다.
+
+dashboard 화면이 나오면 turbine의 스트림 주소(http://localhost:12121/turbine.stream)를 입력한다.
+
+hystrixcommand를 실행하기 위해서 (http://localhost:10001/)을 브라우저 또는 터미널에서 실행한다.
+
+dashboard에서 Circuit이 변경되는 것을 확인한다.
+
+rabbitmq management 화면(http://localhost:15672)에서 guest/guest로 로그인하여 exchange와 queue가 존재하는지 확인한다.
