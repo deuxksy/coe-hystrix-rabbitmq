@@ -426,6 +426,7 @@ public class EurekaServerApplication {
 ## 7. 실행
 
 위에서 작성한 어플리케이션을 실행 한 이후 http://localhost:9999/hystrix 로 접속한다.
+![](./guide-image/dashboard.png)
 
 dashboard 화면이 나오면 turbine의 스트림 주소(http://localhost:12121/turbine.stream)를 입력한다.
 
