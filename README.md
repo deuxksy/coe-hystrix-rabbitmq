@@ -1,4 +1,4 @@
-# Turbine With AMQP
+# Turbine With RabbitMQ
 
 클러스터를 통해 hystrix 스트림의 정보를 집계하는 방법은 turbine을 사용하면 가능하였다.
 하지만 이러한 집계(aggregation) 방법은 pull-based 방식이기 때문에 turbine 인스턴스가 각 인스턴스에게 스트림을 요청하게 된다. 이러한 방식은 인스턴스가 늘어날 때 마다 turbine에게 부담을 주게 된다. 그리고 일부 환경(ex: PaaS)에서는 모든 분산 Hystrix command를 가져오는 turbine이 작동하지 않을 때도 존재한다.
