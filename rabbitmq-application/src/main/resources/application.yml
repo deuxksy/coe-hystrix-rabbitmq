@@ -1,0 +1,43 @@
+server:
+  port: 10001
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+spring:
+  cloud:
+    stream:
+      binders:
+#        defaultBinder: rabbit2
+#       hystrix stream을 위한 rabbitmq설정
+        rabbit1:
+#          defaultCandidate: false
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+        rabbit2:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5673
+                username: guest
+                password: guest
+      bindings:
+        hystrixStreamOutput:
+          destination: ddo
+          binder: rabbit1
+        messageOutput:
+          destination: act
+          binder: rabbit2
+  application:
+    name: rabbitmq-application

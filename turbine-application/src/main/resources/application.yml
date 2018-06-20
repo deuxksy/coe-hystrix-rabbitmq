@@ -1,0 +1,23 @@
+server:
+  port: 12121
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        turbineStreamInput:
+          binder: rabbit1
+          destination: ddo
+          group: act
+      binders:
+        rabbit1:
+          type: rabbit
+          environment:
+            spring:
+              rabbitmq:
+                host: localhost
+                port: 5672
+                username: guest
+                password: guest
+  application:
+    name: turbine-application
