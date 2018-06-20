@@ -310,12 +310,12 @@ public class RabbitMQApplication {
 pom에서 아래와 같이 dependency를 추가한다.
 ~~~xml
 <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-turbine-stream</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-netflix-turbine-stream</artifactId>
+</dependency>
+<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-stream-binder-rabbit</artifactId>
 </dependency>
 ~~~
 
@@ -374,9 +374,9 @@ public class DemoApplication {
 pom에 아래와 같은 dependency를 추가한다.
 ~~~xml
 <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
-			<version>1.4.4.RELEASE</version>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+	<version>1.4.4.RELEASE</version>
 </dependency>
 ~~~
 
@@ -402,8 +402,8 @@ public class DashboardApplication {
 pom에 아래와 같은 dependency를 추가한다.
 ~~~xml
 <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 </dependency>
 ~~~
 
